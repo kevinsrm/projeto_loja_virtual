@@ -1,0 +1,25 @@
+{
+  "name": "projeto-eccomerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "bootstrap": "^5.3.8",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.5",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.24",
+    "nodemon": "^3.1.11",
+    "postcss": "^8.5.6"
+  }
+}
