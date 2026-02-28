@@ -1,1 +1,22 @@
-<h1>{{dados}}</h1>
+<h5>Formulário Recebido, você sera redirecionado em breve</h5>
+
+{{!-- Listando os arquivos enviados --}}
+<h2>Arquivos:</h2>
+  {{#each arquivos}}
+    <img width="100px" height="100px" src="/uploads/{{this.filename}}">
+  {{/each}}
+
+
+<hr>
+
+{{!-- Acessando as propriedades do objeto 'dados' --}}
+<h2>Nome: {{dados.nome}}</h2>
+<h2>Preço: {{dados.preco}}</h2>
+<h2>Categoria: {{dados.categoria}}</h2>
+<h2>Descrição: {{dados.descricao}}</h2>
+<h2>Estoque: {{dados.estoque}}</h2>
+<script>
+  setTimeout(()=>{
+    window.location.href = "/";
+  },3000)
+</script>

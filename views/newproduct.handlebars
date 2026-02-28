@@ -1,14 +1,128 @@
-<div class="row">
-    <form method="POST" action="cadastro-user" enctype="multipart/form-data" class="col s12">
+
+
+<div class="isNewProductPage">
+<nav class="deep-purple lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <!--menu pc-->
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">carrinho </a></li>
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+      
+      <!-- botão pesquisa -->
+      <div style="margin-right: 15px; width: 30px; float: right" class="right-align">
+        <a id="btn-search"><i class="material-icons white-text light">search</i></a>
+      </div>
+      
+      
+      
+    </div>
+  </nav>
+<div class="row container glass-panel">
+    <form method="post" action="validateupload" class="col s12 containerrow" enctype="multipart/form-data">
       <div class="row">
+        
         <div class="input-field col s6">
-          <input id="last_name" type="file" class="validate" name="imagem">
-          <label for="last_name">Last Name</label>
+          <input required type="text" class="validate" id="name1" name="nome">
+          <label style="text-shadow: 0 0 5px black" class="white-text" for="name1">nome do produto</label>
         </div>
         <div class="input-field col s6">
-          <button class="btn btn-float blue" id="last_name" type="submit" class="validate">enviar</button>
+          <input id="preco" type="text" class="validate">
+          <input id="valorLimpo" style="display: none" type="text" name="preco">
+          <label style="text-shadow: 0 0 5px black" class="white-text" for="preco">preço</label>
+        </div>
+        
+          <!--substituir por um select-->
+          <ul class="collapsible transparent" data-collapsible="accordion">
+    <li>
+      <div style="text-shadow: 0 0 5px black" class="collapsible-header transparent white-text"><i class="material-icons">grid_view</i>escolha a categoria</div>
+      <div class="collapsible-body">
+
+            
+    <select required="true" id="categoria" class="browser-default transparent blue-text" name="categoria">
+    <option value="defaut" disabled >categorias</option>
+    <option value="cat2">infoprodutos</option>
+    <option value="cat3">software</option>
+    <option value="outros">outros</option>
+  </select>
+  
+  </div>
+      
+    </li>
+    
+    </ul>
+    <div class="input-field col s12">
+      <textarea id="descricao" type="textarea" maxlength="300" class="materialize-textarea" name="descricao"></textarea>
+      <label style="text-shadow: 0 0 5px black" class="white-text" for="descricao">descrição (300 caracteres)</label>
+    </div>
+    
+    <div class="input-field col s12">
+      <input id="estoque" type="number" name="estoque">
+      <label style="text-shadow: 0 0 5px black" class="white-text" for="estoque">estoque</label>
+    </div>
+    <div style="display: flex !important; flex-direction: column !important" class="input-field col s12">
+      <input style="display:none" id="upload" type="file" name="imagens" max="4" accept="image/*" onchange="lll(event)" multiple>
+      <label class="waves-effect waves-light" style="border: 2px dashed lightblue; padding: 20px; display: flex; flex-direction: row" for="upload"><span class="light blue-text">insira sua imagem</span><i class="material-icons blue-text">upload</i></label>
+      
+      
+    </div>
+    <div class="input-field col s12" style="margin-top: 105px !important" id="preview"></div>
+
+        
+        <div style="margin-top: 90px" class="input-field col s12">
+          <button class="btn-large btn-float blue waves-effect waves-light" id="last_name" type="submit" class="validate">enviar</button>
         </div>
       </div>
       
     </form>
+  </div>
+      <!-- container pesquisar -->
+      <div id="container-search" class="max white container-search hide">
+        <!--formulario de pesquisa-->
+        
+        <div class="row z-depth-4">
+          <form class="col s12">
+            <div class="row col s12">
+          <div id="div-search" class="input-field col s10">
+            <input id="pesquisar" type="text" class="validate" names="search">
+            <label id="label-pesquisar" for="pesquisar">pesquisar</label>
+            
+            
+          </div>
+          <div id="div-submit" class="input-field col s1">
+            <input style="display: none" id="submit" type="text" class="validate" names="search">
+            <label for="submit"><i class="material-icons">search</i></label>
+            
+          </div>
+          <div style="margin-top:25px" class="input-field col s1">
+            <i id="container-close" class="material-icons white-text">close</i>
+            
+          </div>
+        </div>
+        </form>
+        </div>
+        <!--simulação dos resultados-->
+        <ul id="results" style="">
+        <li><a href="">iphone</a></li>
+        <li><a href="">iphone</a></li>
+        <li><a href="">iphone</a></li>
+        <li><a href="">iphone</a></li>
+        <li><a href="">iphone</a></li>
+        </ul>
+        
+      </div>
+      <!--fim container search-->
+      <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">carrinho <i class="material-icons right">shopping_cart</i></a></li>
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>
+  
   </div>
