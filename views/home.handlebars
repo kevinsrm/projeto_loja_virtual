@@ -4,15 +4,19 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <!--menu pc-->
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">carrinho </a></li>
+        <li class="hide-on-med-and-up"><a href="sass.html">carrinho </a></li>
         <li><a href="sass.html">Sass</a></li>
         <li><a href="badges.html">Components</a></li>
         <li><a href="collapsible.html">Javascript</a></li>
         <li><a href="mobile.html">Mobile</a></li>
       </ul>
-      
+      <!--div do qtd itens no carrinho-->
+      <div style="margin-right: 15px; float: right; width: 40px; display: flex; justify-content: center; align-items: center" class="">
+        <i class="material-icons">shopping_cart</i>
+        <span style="width: 10px; height: 10px; z-index: 9; float: right; position: relative; top: -5px; left:-8px; padding: 8px !important; border-radius: 50%; display: flex; justify-content: center; align-items: center" class="orange">1</span>
+      </div>
       <!-- botão pesquisa -->
-      <div style="margin-right: 15px" class="container-btn-search right-align">
+      <div style="margin-right: 15px; float: right" class="container-btn-search right-align">
         <a id="btn-search"><i class="material-icons white-text light">search</i></a>
       </div>
       
@@ -59,11 +63,47 @@
       
 
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">carrinho <i class="material-icons right">shopping_cart</i></a></li>
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
+    <li><div class="user-view">
+      <div class="background">
+        <img src="/images/bgmobile.png">
+      </div>
+      <a href="#user"><img class="circle" src="/images/bgmobile.png"></a>
+      {{#if isLoged}}
+      <a href="#id"><span class="name">id, {{userId}}</span></a>
+      {{/if}}
+      {{#if isLoged}}
+      <a href="#name"><span class="name">{{nome}}</span></a>
+      {{/if}}
+      {{#if isLoged}}
+      <a href="#email"><span class="email">{{email}}</span></a>
+      {{/if}}
+      
+    </div></li>
+    <li><a href="/">home <i class="material-icons right">home</i></a></li>
+    <li><a href="/login">minha conta <i class="material-icons right">account_circle</i></a></li>
+    <ul class="collapsible">
+    <li>
+      <div style="margin-left: 14px" class="collapsible-header"><a href="#">First<i class="material-icons right">filter_drama</i></a></div>
+      <div class="collapsible-body"><a style="margin-left: 32px" href="index.html">meus anúncios</a></div>
+      <div class="collapsible-body"><a style="margin-left: 32px" href="index.html">criar anúncio</a></div>
+    </li>
+    </ul>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    
+    
+    <li><a href="badges.html">cupons<i class="material-icons right">local_offer</i></a></li>
+    <ul class="collapsible">
+    <li>
+      <div style="margin-left: 14px" class="collapsible-header"><a href="#">categorias<i class="material-icons right">filter_drama</i></a></div>
+      <div class="collapsible-body"><a style="margin-left: 32px" href="index.html">infoprodutos</a></div>
+      <div class="collapsible-body"><a style="margin-left: 32px" href="index.html">software</a></div>
+      <div class="collapsible-body"><a style="margin-left: 32px" href="index.html">outros</a></div>
+    </li>
+    </ul>
+    <li><div class="divider"></div></li>
+    <li><a href="mobile.html">sobre<i class="material-icons right">info</i></a></li>
+    <li><a href="/logout">sair<i class="material-icons right">exit_to_app</i></a></li>
   </ul>
   
   <!-- carrosel -->

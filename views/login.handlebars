@@ -1,0 +1,276 @@
+<div class="isNewLoginPage">
+<nav class="deep-purple lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <!--menu pc-->
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">carrinho </a></li>
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+      
+      <!-- botão pesquisa -->
+      <div style="margin-right: 15px; float: right" class="container-btn-search right-align hide">
+        <a id="btn-search"><i class="material-icons white-text light">search</i></a>
+      </div>
+      
+      
+      
+    </div>
+  </nav>
+  <!-- container pesquisar -->
+      <div id="container-search" class="max white container-search hide">
+        <!--formulario de pesquisa-->
+        
+        <div class="row z-depth-4">
+          <form class="col s12">
+            <div class="row col s12">
+          <div id="div-search" class="input-field col s10">
+            <input id="pesquisar" type="text" class="validate" names="search">
+            <label id="label-pesquisar" for="pesquisar">pesquisar</label>
+            
+            
+          </div>
+          <div id="div-submit" class="input-field col s1">
+            <input style="display: none" id="submit" type="text" class="validate" names="search">
+            <label for="submit"><i class="material-icons">search</i></label>
+            
+          </div>
+          <div style="margin-top:25px" class="input-field col s1">
+            <i id="container-close" class="material-icons white-text">close</i>
+            
+          </div>
+        </div>
+        </form>
+        </div>
+        <!--simulação dos resultados-->
+        <ul id="results" style="">
+        <li><a href="">iphone</a></li>
+        <li><a href="">iphone</a></li>
+        <li><a href="">iphone</a></li>
+        <li><a href="">iphone</a></li>
+        <li><a href="">iphone</a></li>
+        </ul>
+        
+      </div>
+      <!--fim container search-->
+      
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="bg1.png">
+      </div>
+      <a href="#user"><img class="circle" src="b1.jpg"></a>
+      <a href="#name"><span class="white-text name">John Doe</span></a>
+      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="/">home <i class="material-icons right">home</i></a></li>
+    <li><a href="/login">minha conta <i class="material-icons right">account_circle</i></a></li>
+    <ul class="collapsible">
+    <li>
+      <div style="margin-left: 14px" class="collapsible-header"><a href="#">First<i class="material-icons right">filter_drama</i></a></div>
+      <div class="collapsible-body"><a style="margin-left: 32px" href="index.html">meus anúncios</a></div>
+      <div class="collapsible-body"><a style="margin-left: 32px" href="index.html">criar anúncio</a></div>
+    </li>
+    </ul>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    
+    
+    <li><a href="badges.html">cupons<i class="material-icons right">local_offer</i></a></li>
+    <ul class="collapsible">
+    <li>
+      <div style="margin-left: 14px" class="collapsible-header"><a href="#">categorias<i class="material-icons right">filter_drama</i></a></div>
+      <div class="collapsible-body"><a style="margin-left: 32px" href="index.html">infoprodutos</a></div>
+      <div class="collapsible-body"><a style="margin-left: 32px" href="index.html">software</a></div>
+      <div class="collapsible-body"><a style="margin-left: 32px" href="index.html">outros</a></div>
+    </li>
+    </ul>
+    <li><div class="divider"></div></li>
+    <li><a href="mobile.html">sobre<i class="material-icons right">info</i></a></li>
+    <li><a href="mobile.html">sair<i class="material-icons right">exit_to_app</i></a></li>
+  </ul>
+  
+  <!-- glass panel form-->
+  <div class="flip-container">
+    <div id="card" class="">
+      <div id="formcadastro1" class="row container glass-panel face front">
+        <h5 class="white-text light center">cadastrar</h5>
+    <form method="POST" action="/cadastrouser" class="col s12 containerrow">
+      <div class="row">
+        
+        <div class="input-field col s12">
+          <input required type="text" class="validate" id="nome" name="nome">
+          <label style="text-shadow: 0 0 5px black" class="white-text" for="nome">nome</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" name="email" required>
+          
+          <label style="text-shadow: 0 0 5px black" class="white-text" for="email">email</label>
+        </div>
+        
+        
+    <div class="input-field col s12">
+      <input id="senha" type="password" class="materialize-textarea" name="senha" required>
+      <label style="text-shadow: 0 0 5px black" class="white-text" for="senha">senha</label>
+    </div>
+    
+    <div class="input-field col s12">
+      <input id="senhadois" type="password" name="senhadois" required>
+      <label style="text-shadow: 0 0 5px black" class="white-text" for="senhadois">insira a senha novamente</label>
+    </div>
+    
+    
+
+        
+        <div style="" class="input-field col s12">
+          <button class="btn-large btn-float blue waves-effect waves-light col s12" id="last_name" type="submit" class="validate">cadastrar</button>
+          
+          <div class="col s12">
+          <h6 class="center light">ou</h6>
+        <li class="divider"></li>
+        
+        </div>
+        <div class="input-field col s12"></div>
+        <div class="col s12 center">
+          <a id="changetologin" class="blue-text center">fazer login</a>
+        </div>
+        </div>
+      </div>
+      
+    </form>
+  </div>
+  
+  
+  <!--login form-->
+      <div id="formcadastro2" class="row container glass-panel face back">
+        <h5 class="white-text light center">login</h5>
+    <form method="POST" action="/loginuser" class="col s12 containerrow">
+      <div class="row">
+        
+        
+        <div class="input-field col s12">
+          <input id="email1" type="email" class="validate" name="email" required>
+          
+          <label style="text-shadow: 0 0 5px black" class="white-text" for="email1">seu email</label>
+        </div>
+        
+        
+    <div class="input-field col s12">
+      <input id="senha" type="password" class="materialize-textarea" name="senha" required>
+      <label style="text-shadow: 0 0 5px black" class="white-text" for="senha">senha</label>
+    </div>
+    
+    
+    
+    <div class="input-field col s12" style="margin-top: 105px !important" id="preview"></div>
+
+        
+        <div class="input-field col s12">
+          <button class="btn-large btn-float blue waves-effect waves-light col s12" id="last_name" type="submit" class="validate">entrar</button>
+        </div>
+        <div class="col s12">
+          <h6 class="center light">ou</h6>
+        <li class="divider"></li>
+        
+        </div>
+        <div class="input-field col s12"></div>
+        <div class="col s12 center">
+          <a id="changetosignup" class="blue-text center">cadastrar-se</a>
+        </div>
+      </div>
+      
+    </form>
+  </div>
+  </div>
+  </div>
+{{#if error}}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    M.toast({
+      html: '{{error}}', 
+      displayLength: 4000, 
+      classes: 'rounded red accent-2'
+    });
+    
+    // Forçar o card a ficar no lado de LOGIN se houver erro de login
+    const card = document.getElementById("card");
+    card.classList.add("flipped");
+  });
+</script>
+{{/if}}
+
+
+<script src="./script.js"></script>
+<script>
+    let changetologin = document.getElementById("changetologin");
+  let changetosignup = document.getElementById("changetosignup");
+  let card = document.getElementById("card");
+
+  // Quando clica em "Cadastre-se" (no form de cadastro para ir pro login)
+  changetologin.addEventListener("click", (e) => {
+    e.preventDefault(); // Evita que o link tente navegar
+    card.classList.add("flipped");
+  });
+
+  // Quando clica em "Faça login" (no form de login para voltar pro cadastro)
+  changetosignup.addEventListener("click", (e) => {
+    e.preventDefault();
+    card.classList.remove("flipped");
+  });
+
+let senha_um = document.getElementById("senha");
+let senha_dois = document.getElementById("senhadois");
+let input1 = document.getElementById("senha");
+let input2 = document.getElementById("senhadois");
+
+input1.addEventListener("change", (e)=>{
+  if(senha_um.value === senha_dois.value){
+    M.toast({
+  html: 'as senhas coincidem', 
+  displayLength: 3000, 
+  classes: 'rounded'
+  
+});
+e.preventDefault()
+  }
+  else if(senha_um.value !== senha_dois.value){
+    M.toast({
+  html: 'as senhas não coincidem: ' + senha_um.value + "senha dois: " + senha_dois.value, 
+  displayLength: 5000, 
+  classes: 'rounded'
+});
+  }
+  else{
+    e.preventDefault()
+  }
+})
+
+input2.addEventListener("change", (e)=>{
+  if(senha_um.value === senha_dois.value){
+    M.toast({
+  html: 'as senhas coincidem', 
+  displayLength: 3000, 
+  classes: 'rounded'
+  
+});
+e.preventDefault()
+  }
+  else if(senha_um.value !== senha_dois.value){
+    M.toast({
+  html: 'as senhas não coincidem: ' + senha_um.value + "senha dois: " + senha_dois.value, 
+  displayLength: 5000, 
+  classes: 'rounded'
+});
+  }
+  else{
+    e.preventDefault()
+  }
+})
+</script>
+
+</div>

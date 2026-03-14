@@ -15,7 +15,7 @@ body {
 padding: 0px !important;
 }
 
-.isNewProductPage {
+.isNewProductPage, .isNewLoginPage {
     background-image: url('/images/bgmobile.png');
   background-size: cover;           /* Faz a imagem preencher todo o espaço disponível */
   background-position: center;      /* Centraliza a imagem para não cortar apenas um lado */
@@ -34,6 +34,46 @@ padding: 0px !important;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 15px !important;       /* Bordas mais arredondadas ficam melhores */
 }
+/* Centraliza o container na tela */
+.flip-container {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+/* O card agora controla a transição de forma suave */
+#card {
+  position: relative;
+  width: 80%;
+  max-width: 450px;
+  height: 600px;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+/* Quando esta classe for adicionada, ele vira */
+#card.flipped {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Esconde a face que está "atrás" */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  top: 0;
+  left: 0;
+}
+
+/* A face de login já nasce invertida para aparecer corretamente ao girar */
+.back {
+  transform: rotateY(180deg);
+}
+
 
 .products-container {
   margin-top: 0px !important;
